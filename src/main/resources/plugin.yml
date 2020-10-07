@@ -1,0 +1,5 @@
+name: HornetPlugin
+version: "1.0"
+main: navy.warspite.minecraft.hornetplugin.Main
+api-version: "1.16"
+author: warspite1126
