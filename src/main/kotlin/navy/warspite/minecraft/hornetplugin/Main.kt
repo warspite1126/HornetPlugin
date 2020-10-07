@@ -11,7 +11,7 @@ class Main : JavaPlugin() {
 
     override fun onEnable() {
         instance = this
-        println(instance.name)
         Config.initialise()
+        server.pluginManager.registerEvents(EventListener, this)
     }
 }
