@@ -11,6 +11,7 @@ class Main : JavaPlugin() {
 
     override fun onEnable() {
         instance = this
-        Yaml.initialise()
+        println(instance.name)
+        Config.initialise()
     }
 }
