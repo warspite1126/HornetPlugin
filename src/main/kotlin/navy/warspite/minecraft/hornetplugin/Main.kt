@@ -12,6 +12,8 @@ class Main : JavaPlugin() {
     override fun onEnable() {
         instance = this
         Config.initialise()
+        getCommand("hornet")?.setExecutor(CommandRegister)
+        getCommand("hornet")?.tabCompleter = TabCompleteRegister
         server.pluginManager.registerEvents(EventListener, this)
     }
 }
